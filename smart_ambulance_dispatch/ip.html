@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="ip.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"></div>
+            <button class="mobile-menu-button" aria-label="Open navigation menu">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#" class="login-button">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Emergency Help in One Click!</h1>
+                <button class="request-button">Request Ambulance</button>
+            </div>
+            <div class="hero-image">
+                <img src="images/ambulance2.JPG" alt="Ambulance">
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <img src="images/bullet-8543.png" alt="Fast Response">
+                <h3>Fast Response</h3>
+                <p>Our ambulance service ensures quick response times to emergencies.</p>
+            </div>
+            <div class="feature">
+                <img src="images/watch-20627 (1).png" alt="Real-Time Tracking">
+                <h3>Real-Time Tracking</h3>
+                <p>Track your ambulance in real-time and know exactly when help will arrive.</p>
+            </div>
+            <div class="feature">
+                <img src="images/key-19667.png" alt="Secure">
+                <h3>Secure</h3>
+                <p>Your information is safe with our robust security measures.</p>
+            </div>
+        </section>
+
+        <section id="servicesPage" style="display: none;">
+            <h1>Our Emergency Services</h1>
+
+            <section>
+                <h2>Ambulance Types</h2>
+                <ul>
+                    <li>Basic Life Support - Standard emergency medical transportation</li>
+                    <li>Advanced Life Support - Critical care transport with advanced equipment</li>
+                    <li>Neonatal Ambulance - Specialized newborn emergency care</li>
+                    <li>ICU Ambulance - Mobile intensive care unit</li>
+                    <li>Patient Transport - Non-emergency medical transportation</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Nearby Hospitals</h2>
+                <ul>
+                    <li>St. Paul Hospital - 42 beds available, 12 min away</li>
+                    <li>Black Lion Hospital - 35 beds available, 8 min away</li>
+                    <li>Yekatit 12 Hospital - 28 beds available, 15 min away</li>
+                    <li>Nordic Medical Center - 15 beds available, 20 min away</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Smart Emergency Services</h2>
+                <ul>
+                    <li>Real-time Tracking</li>
+                    <li>Patient Info Management</li>
+                    <li>Emergency Chat/Call</li>
+                    <li>Hospital Pre-notification</li>
+                    <li>Route Optimization</li>
+                </ul>
+            </section>
+        </section>
+
+        <footer id="footer">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <p>Contact Us</p>
+                    <p>Phone: +961-12-34-56</p>
+                    <p>Email: support@emergencyhelp.com</p>
+                    <p>Address: Addis Ababa, Ethiopia</p>
+                </div>
+                <div class="legal">
+                    <p >Legal</p>
+                
+                    <p>Privacy Policy</p>
+                    <p>Terms of Service</p>
+                    <p>Refund Policy</p>
+                </div>
+                <div class="social">
+                    <p>Stay Connected</p>
+                    <div class="social-icons">
+                        <div class="social-item">
+                            <img src="images/youtube-play-button-28308.png" alt="YouTube">
+                            <p>Ambulance Help channel</p>
+                        </div>
+                        <div class="social-item">
+                            <img src="images/logo-ig-png-32478.png" alt="Instagram">
+                            <p>@ambulance_help</p>
+                        </div>
+                        <div class="social-item">
+                            <img src="images/logo-facebookpng-32202.png" alt="Facebook">
+                            <p>Ambulance help</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Login Popup -->
+    <div class="login-popup" id="loginPopup">
+        <h1>Login</h1>
+        <form>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <a href="#" class="forgot-password">Forgot Password?</a>
+            <button type="submit" class="login-button">Login</button>
+        </form>
+        <div class="register">
+            Don't have an account? <a href="#">Register</a>
+        </div>
+    </div>
+
+    <div class="registration-popup" id="registrationPopup">
+        <h1>Registration</h1>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Enter your email" required>
+            <input type="password" placeholder="Enter your password" required>
+            <label>
+                <input type="checkbox"> Remember me
+            </label>
+            <button type="submit" class="register-button">Register</button>
+        </form>
+        <div class="login-link">
+            Already have an account? <a href="#" id="loginLink">Login</a>
+        </div>
+    </div>
+
+    <script src="ip.js"></script>
+</body>
+</html>

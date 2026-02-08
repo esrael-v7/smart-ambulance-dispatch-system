@@ -1,0 +1,487 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Adjust height to fit content */
+    background-color: #f5f5f5;
+    overflow: auto; /* Allow scrolling on all pages */
+}
+/* Adjust navbar styles to position it on the top right */
+.navbar {
+    display: flex;
+    justify-content: flex-end; /* Align navbar to the right */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute; /* Position the navbar at the top */
+    top: 0;
+    right: 0;
+    width: 100%;
+    
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Add hover effect to navbar buttons */
+.nav-links a:hover {
+    background-color: #D32F2F; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+    border-radius: 4px; /* Add slight rounding for a polished look */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.nav-links a:active {
+    background-color: #D32F2F; /* Change color when clicked */
+    color: white;
+}
+
+/* Update the login button styles to make it more visible */
+.login-button {
+    color: inherit; /* Remove specific color */
+    background-color: transparent; 
+    border: none; /* Remove border */
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: transparent; /* Ensure no background color on hover */
+    color: inherit; /* Ensure no color change on hover */
+}
+
+/* Adjust the container to fill the entire screen */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+    align-items: stretch;
+    width: 100%;
+    min-height: 100vh; /* Allow scrolling if content overflows */
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0; /* Remove rounded corners */
+    overflow: auto; /* Enable scrolling */
+}
+
+/* Hero section styles */
+.hero {
+    flex: 1;
+    display: flex;
+    flex-direction: row; /* Ensure horizontal alignment */
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #D32F2F;
+    color: white;
+}
+
+.hero-content {
+    max-width: 50%;
+    text-align: left; /* Align text to the left */
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.request-button {
+    background-color: white;
+    color: #D32F2F;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Add hover effect to the request ambulance button */
+.request-button:hover {
+    background-color: #B71C1C; /* Darken the background color on hover */
+    color: white; /* Change text color to white */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Stretch the ambulance image more to the right corner of the container */
+.hero-image {
+    display: flex;
+    justify-content: flex-end; /* Align the image to the right */
+    align-items: center; /* Center the image vertically */
+    height: 100%;
+    width: 100%;
+}
+
+.hero-image img {
+    width: auto; /* Allow the width to adjust dynamically */
+    height: 100%; /* Stretch the height to fill the container */
+    object-fit: contain; /* Ensure the image fits proportionally */
+    margin-right: 0%;
+    margin-bottom: 0%;
+}
+
+/* Features section styles */
+.features {
+    display: flex;
+    flex-direction: row; /* Align items horizontally */
+    justify-content: space-around; /* Distribute feature items evenly */
+    align-items: center; /* Center items vertically */
+    padding: 20px;
+    background-color: #F5F5F5; /* Light background for contrast */
+}
+
+.feature {
+    text-align: center;
+    max-width: 30%; /* Ensure features don't stretch too wide */
+    margin: 0 10px; /* Add spacing between features */
+}
+
+.feature img {
+    width: 80px; /* Set a consistent size for feature icons */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: space-between; /* Distribute content evenly */
+    align-items: flex-start; /* Align items to the top */
+    padding: 10px; /* Reduce padding to pull content closer to the top */
+    background-color: #333;
+    color: white;
+    text-align: left; /* Align text to the left */
+}
+
+.footer-content > div {
+    flex: 1; /* Allow each section to take equal space */
+    margin: 10px; /* Add spacing between sections */
+    min-width: 200px; /* Ensure sections don't shrink too much */
+}
+
+.footer-content p {
+    margin: 5px 0; /* Add spacing between paragraphs */
+}
+
+/* Adjust the legal section alignment */
+.legal {
+    text-align: left; /* Align text to the left */
+    margin: 10px; /* Add spacing around the section */
+    flex: 1; /* Allow it to take equal space in the footer */
+    min-width: 200px; /* Ensure it doesn't shrink too much */
+}
+
+.legal p {
+    margin: 5px 0; /* Add spacing between paragraphs */
+}
+
+/* Adjust the size of PNG files in the footer */
+.footer-content .social-icons img {
+    width: 40px; /* Set a fixed width for the icons */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add spacing between the icon and text */
+}
+
+/* Adjusting the size of the YouTube logo to match the Instagram logo */
+.social-item img[alt="YouTube"] {
+    width: 50px; /* Match the width of the Instagram logo */
+    height: 50px; /* Match the height of the Instagram logo */
+}
+
+/* Aligning the text to the right of the images in the footer social section */
+.social-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Add some spacing between the image and the text */
+}
+
+.social-item img {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+}
+/* popup styles */
+#requestAmbulancePopup,.registration-popup ,.login-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    display: none; /* Hidden by default */
+}
+
+.registration-popup.active,.login-popup.active {
+    display: block; /* Show popup when active */
+}
+
+#requestAmbulancePopup h1,.registration-popup h1,.login-popup h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Adjust the email and password text boxes to fit better in the center of the login box */
+.login-popup form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the form elements */
+}
+
+.registration-popup input ,.login-popup input ,#requestAmbulancePopup input{
+    width: 90%; /* Adjust width to fit better within the box */
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    text-align: left; /* Align text inside the input boxes to the left */
+}
+
+    .registration-popup .register-button,.login-popup .login-button,#requestAmbulancePopup button {
+    width: 100%;
+    background-color: #D32F2F;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+  .registration-popup .register-button:hover,.login-popup .login-button:hover,#requestAmbulancePopup button:hover {
+    background-color: #B71C1C;
+}
+
+.login-popup .forgot-password {
+    text-align: right;
+    font-size: 12px;
+    color: #2A5C99;
+    text-decoration: none;
+    margin-top: -10px;
+    display: block;
+}
+
+.login-popup .register {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.login-popup .register a {
+    color: #2A5C99;
+    text-decoration: none;
+}
+
+.registration-popup .login-link {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.registration-popup .login-link a {
+    color: #2A5C99;
+    text-decoration: none;
+}
+
+.registration-popup label,#requestAmbulancePopup label{
+    display: inline-flex;
+    align-items: center; 
+    gap: 8px;
+    cursor: pointer;
+
+}
+.registration-popup input[type="checkbox"] {
+    margin:0;
+    padding:0;
+}
+#requestAmbulancePopup form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Add CSS to ensure the services page content is not covered by the navbar */
+#servicesPage {
+    margin-top: 80px; /* Ensure it is not covered by the navbar */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Changed to a light grayish color for a more interesting look */
+    color: #333;
+}
+
+#servicesPage h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #d32b0d;
+    margin-bottom: 20px;
+}
+
+#servicesPage section {
+    margin-bottom: 30px;
+}
+
+#servicesPage h2 {
+    font-size: 1.8em;
+    color: #d32b0d;
+    border-bottom: 2px solid #d32b0d;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+#servicesPage ul {
+    list-style: none;
+    padding: 0;
+}
+
+#servicesPage ul li {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#servicesPage ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+#servicesPage ul li p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Add a blurred effect to the background when the popup is active */
+.blurred {
+    filter: blur(5px);
+    transition: filter 0.3s ease;
+}
+
+/* Hamburger menu button styles */
+.mobile-menu-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #D32F2F;
+    margin-right: 20px;
+    z-index: 10;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    .mobile-menu-button {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background: white;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        z-index: 9;
+        gap: 0;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links li {
+        text-align: center;
+        padding: 15px 0;
+        border-bottom: 1px solid #eee;
+    }
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    main {
+        margin-top: 60px;
+    }
+    .features {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .feature {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+    .footer-content > div {
+        min-width: 0;
+        margin: 10px 0;
+    }
+    #requestAmbulancePopup, .registration-popup, .login-popup {
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 95vw;
+        max-width: 95vw;
+        min-width: 0;
+        padding: 18px 8px;
+        box-sizing: border-box;
+        border-radius: 12px;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-menu-button {
+        display: none;
+    }
+    .nav-links {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        background: none;
+        box-shadow: none;
+        gap: 20px;
+    }
+}
+.logout-li .logout-img {
+    opacity: 1 !important;
+    transition: none !important;
+}
+.logout-li:hover .logout-img {
+    opacity: 1 !important;
+}
